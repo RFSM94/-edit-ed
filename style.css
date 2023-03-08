@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    color: black;
+  }
+
+  #defaultCanvas0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  #myCanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0; /* adjust this value based on the height of your footer */
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'prophet-ExtraBold';
+    src: url('./font/ABCProphet-ExtraBold-Trial.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'prophet-light';
+    src: url('./font/ABCProphet-Light-Trial.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'prophet-bold';
+    src: url('./font/ABCProphet-Bold-Trial.otf') format('truetype');
+  }
+
+  body {
+    background: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: prophet-light, sans-serif;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    animation: marquee 70s linear infinite;
+  }
+
+  .header-text2 {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    animation: marquee 30s linear infinite;
+  }
+  
+  .header-container1 {
+    background-color:rgb(47, 0, 255);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-container2 {
+    background-color:black;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-container1 {
+    background-color:rgb(47, 0, 255);
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  .footer-container2 {
+    background-color:black;
+  }
+
+  .footer-text {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    animation: marquee 70s linear infinite;
+  }
+
+  .footer-text2 {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    animation: marquee 40s linear infinite;
+    text-align: center;
+  }
+
+  .highlight {
+    color: rgb(43, 0, 255);
+    font-family: prophet-bold;
+  }
+
+  .body-background {
+    margin-top: 40px;
+    font-family: prophet-ExtraBold, sans-serif;
+    text-transform: uppercase;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .body-background2 {
+    margin-top: 40px;
+    font-family: prophet-light, sans-serif;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    line-height: 1.2;
+    width: 200%;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .bibliography {
+    font-size: 25px;
+    margin-bottom: 200px;
+  }
