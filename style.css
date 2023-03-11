@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  #defaultCanvas0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  #myCanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'prophet-extrabold';
+    src: url('./font/ABCProphetEdu-Extrabold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'prophet-light';
+    src: url('./font/ABCProphetEdu-Light.woff') format('woff');
+  }
+
+/*BODY-TEXT*/
+
+  body {
+    background: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: prophet-light, Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  .highlight {
+    color: rgb(43, 0, 255);
+    font-family: prophet-extrabold, Arial, Helvetica, sans-serif;
+  }
+
+  .body-text {
+    margin-top: 40px;
+    font-family: prophet-extrabold, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 110px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    line-height: 1.2;
+    margin-right: 150px;
+    padding-bottom: 50px;
+  }
+
+  .bibliography {
+    position: relative;
+    font-weight: prophet-Light, sans-serif;
+    font-size: 12px;
+    color: white;
+  }
+
+ /*HEADER*/
+
+ header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+  .header-text {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    animation: marquee 70s linear infinite;
+    animation-iteration-count: infinite;
+  }
+
+  .header-text2 {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    animation: marquee 30s linear infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .header-container1 {
+    background-color:rgb(47, 0, 255);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-container2 {
+    background-color:black;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-container1 {
+    background-color:rgb(47, 0, 255);
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+  }
+
+  .footer-container2 {
+    background-color:black;
+  }
+
+  .footer-text {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    animation: marquee 70s linear infinite;
+    animation-iteration-count: infinite;
+  }
+
+  .footer-text2 {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    animation: marquee 40s linear infinite;
+    animation-iteration-count: infinite;
+    text-align: center;
+  }
+
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
